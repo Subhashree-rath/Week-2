@@ -1,0 +1,20 @@
+package com.beehood.employee.model;
+
+public class Intern extends Employee {
+
+	private double stipend;
+
+	public Intern(int id, String name, double stipend) {
+		super(id, name);
+		this.stipend = stipend;
+	}
+
+	public double getStipend() {
+		return stipend;
+	}
+
+	@Override
+	public double calculateSalary() {
+		return stipend;
+	}
+}
